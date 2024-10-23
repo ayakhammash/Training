@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>${Resource.msg('pagedetails.page.title', 'page', null)}</title>
+        <link rel="stylesheet" href="${URLUtils.staticResourceURL('css/styles.css')}" />
+    </head>
+
+    <body>
+        <h2>${Resource.msg('pagedetails.page.result', 'page', null)} ${pdict.result}</h2>
+    </body>
+</html>

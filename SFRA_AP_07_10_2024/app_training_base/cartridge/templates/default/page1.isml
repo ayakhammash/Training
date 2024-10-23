@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>${Resource.msg('pageform.page.title', 'page', null)}</title>
+        <link rel="stylesheet" href="${URLUtils.staticResourceURL('css/styles.css')}" />
+    </head>
+
+    <body>
+        <h1>${Resource.msg('pageform.page.header', 'page', null)}</h1>
+
+        <form action="${URLUtils.url('MyController-HandleForm')}" method="post">
+            <div>
+                <label for="inputNumber">${Resource.msg('pageform.page.form.label.inputnumber', 'page', null)}</label>
+                <input type="number" id="inputNumber" name="inputNumber" required />
+            </div>
+
+            <div>
+                <button type="submit">${Resource.msg('pageform.page.form.button.submit', 'page', null)}</button>
+            </div>
+        </form>
+    </body>
+</html>
